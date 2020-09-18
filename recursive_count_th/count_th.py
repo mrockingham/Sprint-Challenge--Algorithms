@@ -7,4 +7,15 @@ def count_th(word):
     
     # TBC
     
-    pass
+    occurence_count = 0
+
+    if(word[:2] == 'th'): 
+        occurence_count = 1
+
+
+    
+
+    if len(word) > 1:
+        occurence_count = occurence_count +count_th(word[1:])
+
+    return occurence_count
